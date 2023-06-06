@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Заголовок моей страницы</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- следующие 3 строки нужны для корректного отображения семантических элементов HTML5 в старых версиях Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="film_page">
+      <div class="film_container">
+        <ul class="film_property">
+            <li>
+            <img src="${film.filmImage}" alt="Постер фільма">
+            </li>
+            <li>
+                <ul>
+                    <li><p>Название фильма ${film.name}</p></li>
+                    <li><p>Оригінальна назва: ${film.name}</p>></li>
+                    <li><p>Рік виходу фільму: ${film.releaseDate}</p></li>
+                    <li><p>Початок прокату: ${film.startRental}</p></li>
+                    <li><p>Тривалість:${film.duration}</p></li>
+                    <li><p>Жанр: ${film.genre}</p></li>
+                    <li><p>Вікові обмеження: ${film.ageConstraint}</p></li>
+                    <li><p>Країна виробник: ${film.country}</p></li>
+                    <li><p>Режисер: ${film.director}</p></li>
+                    <li><p В головних ролях: ${film.actors}>В головних ролях: ${film.actors}</p></li>
+                    <li><p Про фільм ${film.aboutFilm}>Про фільм ${film.aboutFilm}</p></li>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <a href="/buy"> Купити квитки </a>
+    </div>
+  </body>
+</html>
