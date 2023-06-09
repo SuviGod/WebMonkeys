@@ -2,14 +2,86 @@
 <html>
 <head>
     <title>Counter</title>
+    <style>
+        /* Стили для контейнера */
+        .container {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        /* Стили для поисковой панели */
+        .search_bar {
+            margin-bottom: 20px;
+        }
+
+        .productFilterForm {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Стили для кнопки продолжения */
+        .continue-button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Стили для счетчика */
+        .counter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .counter-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .counter-item img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .counter-item button {
+            padding: 5px 10px;
+            font-size: 20px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Стили для псевдоэлемента */
+        .counter-item .count::after {
+            content: ' items';
+            font-style: italic;
+        }
+
+        /* Стили для адаптивности */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class = "search_bar">
-            <form class = "productFilterForm">
+        <div class="search_bar">
+            <form class="productFilterForm">
                 <label for="product_name">Назва продукту:</label>
                 <input type="text" id="product_name" name="product_name">
-        
+
                 <label for="product_category">Категорії продуктів:</label>
                 <select id="product_category" name="product_category">
                     <option value="">Усі Категорії</option>
@@ -17,23 +89,119 @@
                     <option value="category2">Категорія 2</option>
                     <option value="category3">Категорія 3</option>
                 </select>
-        
+
                 <label for="productPrice">Діапазон цін:</label>
                 <input type="number" id="product_price_min" name="product_price_min" placeholder="Мінімальна ціна">
                 <input type="number" id="product_price_max" name="product_price_max" placeholder="Максимальна ціна">
                 <input type="submit" value="Filter">
             </form>
-          </div>
-        </div>
-    
-        <div class="image">
-            <img class = "new-header_logo" src = "" alt = ""></img>
         </div>
 
         <div class="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
+            <div class="counter-item">
+                <img src="image1.jpg" alt="Image 1">
+                <button class="decrement">-</button>
+                <span class="count">0</span>
+                <button class="increment">+</button>
+                <p>Бургер</p>
+            </div>
+
+            <div class="counter-item">
+                <img src="image2.jpg" alt="Image 2">
+                <button class="decrement">-</button>
+                <span class="count">0</span>
+                <button class="increment">+</button>
+                <p>Попкорн</p>
+            </div>
+
+            <div class="counter-item">
+                <img src="image3.jpg" alt="Image 3">
+                <button class="decrement">-</button>
+                <span class="count">0</span>
+                <button class="increment">+</button>
+                <p>Начос</p>
+            </div>
+
+            <div class="counter-item">
+                <img src="image4.jpg" alt="Image 4">
+                <button class="decrement">-</button>
+                <span class="count">0</span>
+                <button class="increment">+</button>
+                <p>ХодДог</p>
+            </div>
+
+            <div class="counter-item">
+                <img src="image5.jpg" alt="Image 5">
+                <button class="decrement">-</button>
+                <span class="count">0</span>
+                <button class="increment">+</button>
+                <p>Чипсы</p>
+            </div>
+
+            <div class="counter-item">
+                <img src="image6.jpg" alt="Image 6">
+                <button class="decrement">-</button>
+                <span class="count">0</span>
+                <button class="increment">+</button>
+                <p>Газировка</p>
+            </div>
+
+            <div class="counter-item">
+                <img src="image7.jpg" alt="Image 7">
+                <button class="decrement">-</button>
+                <span class="count">0</span>
+                <button class="increment">+</button>
+                <p>Мороженное</p>
+            </div>
+
+            <div class="counter-item">
+                <img src="image8.jpg" alt="Image 8">
+                <button class="decrement">-</button>
+                <span class="count">0</span>
+                <button class="increment">+</button>
+                <p>Конфеты</p>
+            </div>
+
+            <div class="counter-item">
+                <img src="image9.jpg" alt="Image 9">
+                <button class="decrement">-</button>
+                <span class="count">0</span>
+                <button class="increment">+</button>
+                <p>Куриные крылышки</p>
+            </div>
+
+            <div class="counter-item">
+                <img src="image10.jpg" alt="Image 10">
+                <button class="decrement">-</button>
+                <span class="count">0</span>
+                <button class="increment">+</button>
+                <p>Сахарная вата</p>
+            </div>
+
+            <div class="counter-item">
+                <img src="image11.jpg" alt="Image 11">
+                <button class="decrement">-</button>
+                <span class="count">0</span>
+                <button class="increment">+</button>
+                <p>Жареные крылышки</p>
+            </div>
+
+            <div class="counter-item">
+                <img src="image12.jpg" alt="Image 12">
+                <button class="decrement">-</button>
+                <span class="count">0</span>
+                <button class="increment">+</button>
+                <p>Пицца</p>
+            </div>
+
+            <div class="counter-item">
+                <img src="image13.jpg" alt="Image 13">
+                <button class="decrement">-</button>
+                <span class="count">0</span>
+                <button class="increment">+</button>
+                <p>Нагетсы</p>
+            </div>
+            
         </div>
 
         <button class="continue-button">Continue</button>
