@@ -1,35 +1,65 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future screenings</title>
+    <link rel="stylesheet" href="future_screening_styles.css">
 </head>
 <body>
     <h1>Future screenings</h1>
     
-    <div class = "new_header_container  screening_filter">
-        <div>
-            <label for="day_filter">День нажня:</label>
-            <select id="day_filter" name="day_filter">
-                <option value="">All Days</option>
-                <option value="monday">Понеділок</option>
-                <option value="tuesday">Вівторок</option>
-                <option value="wednesday">Середа</option>
-                <option value="thursday">Четверг</option>
-                <option value="friday">П'ятниця</option>
-                <option value="saturday">Субота</option>
-                <option value="sunday">Неділя</option>
-            </select>
-        </div>
+    <div class="image-container">
+        <a href="https://multiplex.ua/movie/355272">
+            <img src="https://multiplex.ua/images/e6/98/e6984d59cac2f5f4d50cf2695e3ac9b2.jpeg" alt="Image 1">
+        </a>
+        <p class="film-title">Астероїд-Сіті</p>
     </div>
 
-    <div>
-        <a href="https://example.com">
-            <img src="path/to/image.jpg" alt="Image">
+    <div class="image-container">
+        <a href="https://multiplex.ua/movie/355300">
+            <img src="https://multiplex.ua/images/dd/fc/ddfc45ecfb8eb9d0cafa6bc792167269.jpeg" alt="Image 2">
         </a>
-        <p>Attached Text</p>
+        <p class="film-title">Персональний водій</p>
+    </div>
+
+    <div class="image-container">
+        <a href="https://multiplex.ua/movie/355300">
+            <img src="https://multiplex.ua/images/54/53/5453e46244d916a409d957809f334968.jpeg" alt="Image 3">
+        </a>
+        <p class="film-title">Стихії</p>
+    </div>
+
+    <div class="image-container">
+        <a href="https://multiplex.ua/movie/352104">
+            <img src="https://multiplex.ua/images/9b/32/9b3207ab73164c0fb80564a050003a23.jpeg" alt="Image 4">
+        </a>
+        <p class="film-title">Флеш</p>
+    </div>
+
+    <div class="image-container">
+        <a href="https://multiplex.ua/movie/355220">
+            <img src="https://multiplex.ua/images/d8/45/d84584041044fff26713e95997c587d5.jpeg" alt="Image 5">
+        </a>
+        <p class="film-title">У пошуках короля</p>
+    </div>
+
+
+    <div class="screening-filter-container">
+        <div class="screening-filter">
+            <label for="day_filter">Select Day:</label>
+            <select id="day_filter" name="day_filter">
+                <option value="">All Days</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+        </div>
     </div>
 </body>
 </html>
