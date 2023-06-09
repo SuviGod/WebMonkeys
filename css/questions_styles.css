@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.answer {
+    margin-bottom: 20px;
+    color: #777;
+}
+
+strong{
+font-size: 2rem;
+display:block;
+padding-top: 3vh;
+}

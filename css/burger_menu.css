@@ -1,0 +1,73 @@
+/* Стили для контейнера */
+.container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+/* Стили для поисковой панели */
+.search_bar {
+    margin-bottom: 20px;
+}
+
+.productFilterForm {
+    display: flex;
+    align-items: center;
+}
+
+/* Стили для кнопки продолжения */
+.continue-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Стили для счетчика */
+.counter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.counter-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.counter-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.counter-item button {
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Стили для псевдоэлемента */
+.counter-item .count::after {
+    content: ' items';
+    font-style: italic;
+}
+
+/* Стили для адаптивности */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
